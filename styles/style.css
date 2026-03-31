@@ -502,9 +502,9 @@ body {
   flex-direction: column;
   gap: calc(var(--default-padding) * 1.5);
   padding: calc(var(--default-padding) * 1.5);
-  flex: 1;
+  /* flex: 1;
   overflow-y: auto;
-  height: 100vh;
+  height: 100vh; */
 }
 
 .dashboard__header {
