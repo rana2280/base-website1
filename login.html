@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Log in</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-part">
+        <div class="top">
+          <div class="logo__and__quick__sign-up">
+            <div class="logo-content">
+              <img class="logo" src="./images/Logo.svg" alt="logo" />
+              <h2 class="title">Log in</h2>
+            </div>
+            <div class="quick__sign-up">
+              <a href="#" class="quick__sign-up__ways">
+                <img
+                  class="quick__sign-up__logo"
+                  src="./images/google-logo.svg"
+                  alt="google logo"
+                />
+                <h3 class="quick__sign-up__title">Google</h3>
+              </a>
+              <a href="#" class="quick__sign-up__ways">
+                <img
+                  class="quick__sign-up__logo"
+                  src="./images/facebook-logo.svg"
+                  alt="facebook logo"
+                />
+                <h3 class="quick__sign-up__title">Facebook</h3>
+              </a>
+            </div>
+          </div>
+          <div class="or__line">
+            <span>Or</span>
+          </div>
+        </div>
+
+        <form class="form" action="./dashboard.html">
+          <label class="label__title" for="email">Email Address</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+
+          <label class="label__title" for="password">Password</label>
+          <input class="input" type="password" id="password" name="password" />
+
+          <div class="reset__password">
+            <div class="form__agree">
+              <input class="checkbox" type="checkbox" id="agree" />
+              <label class="login__label__title" for="agree">Remember me</label>
+            </div>
+            <a class="reset__link" href="./recover.html">Reset Password?</a>
+          </div>
+
+          <button class="button" type="submit">Log in</button>
+        </form>
+
+        <h3 class="have_account">
+          Don't have account yet?
+          <a class="login__link" href="./index.html"> New Account</a>
+        </h3>
+      </div>
+      <div class="right-part">
+        <div class="images">
+          <img
+            class="sign-up__image"
+            src="./images/login image.svg"
+            alt="sign up image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container dashboard__container">
+      <div class="menu">
+        <div class="top__part">
+          <div class="menu__logo-content">
+            <img class="menu__logo" src="./images/Logo1.svg" alt="logo" />
+            <h2 class="menu__title">Base</h2>
+          </div>
+
+          <div class="menu__elements">
+            <a href="./dashboard-nav.html" class="menu__element">
+              <img
+                class="menu__icon current__icon"
+                src="./images/blue-Category.svg"
+                alt="dashboard icon"
+              />
+              <h3 class="icon__title current__title">Dashboard</h3>
+              <img src="./images/Rectangle 289.svg" class="shadow" />
+            </a>
+            <a href="./analytics.html" class="menu__element">
+              <img
+                class="menu__icon"
+                src="./images/Chart.svg"
+                alt="analytics icon"
+              />
+              <h3 class="icon__title">Analytics</h3>
+            </a>
+            <a href="./invoice.html" class="menu__element">
+              <img
+                class="menu__icon"
+                src="./images/Ticket.svg"
+                alt="invoice icon"
+              />
+              <h3 class="icon__title">Invoice</h3>
+            </a>
+            <a href="./schedule.html" class="menu__element">
+              <img
+                class="menu__icon"
+                src="./images/Document.svg"
+                alt="schedule icon"
+              />
+              <h3 class="icon__title">Schedule</h3>
+            </a>
+            <a href="./calendar.html" class="menu__element">
+              <img
+                class="menu__icon"
+                src="./images/Calendar.svg"
+                alt="calendar icon"
+              />
+              <h3 class="icon__title">Calendar</h3>
+            </a>
+            <a href="./messages.html" class="messages__num">
+              <div class="menu__element">
+                <img
+                  class="menu__icon"
+                  src="./images/Activity.svg"
+                  alt="messages icon"
+                />
+                <h3 class="icon__title">Messages</h3>
+              </div>
+              <div class="nums">
+                <h3 class="num">49</h3>
+              </div>
+            </a>
+            <a href="./notification.html" class="menu__element">
+              <img
+                class="menu__icon"
+                src="./images/Notification.svg"
+                alt="notification icon"
+              />
+              <h3 class="icon__title">Notification</h3>
+            </a>
+            <a href="./settings.html" class="menu__element">
+              <img
+                class="menu__icon"
+                src="./images/Setting.svg"
+                alt="settings icon"
+              />
+              <h3 class="icon__title">Settings</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="bottom__part">
+          <div class="upgrade__section">
+            <img
+              class="upgrade__lamp"
+              src="./images/lamp.svg"
+              alt="upgrade lamp"
+            />
+
+            <img
+              class="upgrade__light"
+              src="./images/light.svg"
+              alt="upgrade light"
+            />
+            <button class="upgrade__button button">Upgrade Now</button>
+          </div>
+
+          <div class="profile">
+            <div class="profile__data">
+              <img
+                src="./images/Profile photo.svg"
+                alt="personal image"
+                class="profile__img"
+              />
+
+              <div class="profile__info">
+                <h3 class="profile__name">Easin Arafat</h3>
+                <h4 class="profile__case">Free Account</h4>
+              </div>
+            </div>
+
+            <a href="./login.html" class="logout">
+              <img
+                src="./images/Logout.svg"
+                alt="logout icon"
+                class="logout__icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="dashboard__header">
+          <h2 class="dashboard__header__title">Dashboard</h2>
+          <div class="dates">
+            <div class="date">
+              <h3 class="the__date">10-06-2021</h3>
+              <img src="./images/Vector.svg" class="arrow__vector" />
+            </div>
+            <div class="date">
+              <h3 class="the__date">10-10-2021</h3>
+              <img src="./images/Vector.svg" class="arrow__vector" />
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__data">
+          <div class="dashboard__info">
+            <div class="info__icons icon1">
+              <img
+                src="./images/Heart.svg"
+                alt="save products icon"
+                class="info__icon"
+              />
+            </div>
+            <div class="info__data">
+              <h3 class="info__number">178+</h3>
+              <h4 class="info__description">Save Products</h4>
+            </div>
+          </div>
+
+          <div class="dashboard__info">
+            <div class="info__icons icon2">
+              <img
+                src="./images/Game.svg"
+                alt="stock products icon"
+                class="info__icon"
+              />
+            </div>
+            <div class="info__data">
+              <h3 class="info__number">20+</h3>
+              <h4 class="info__description">Stock Products</h4>
+            </div>
+          </div>
+
+          <div class="dashboard__info">
+            <div class="info__icons icon3">
+              <img
+                src="./images/Bag.svg"
+                alt="sales product icon"
+                class="info__icon"
+              />
+            </div>
+            <div class="info__data">
+              <h3 class="info__number">190+</h3>
+              <h4 class="info__description">Sales Products</h4>
+            </div>
+          </div>
+
+          <div class="dashboard__info">
+            <div class="info__icons icon4">
+              <img
+                src="./images/Work.svg"
+                alt="job application icon"
+                class="info__icon"
+              />
+            </div>
+            <div class="info__data">
+              <h3 class="info__number">12+</h3>
+              <h4 class="info__description">Job Application</h4>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__analytics">
+          <div class="reports">
+            <div class="reports__header">
+              <h3 class="reports__title">Reports</h3>
+              <div class="reports__menu">
+                <span class="menu__dot"></span><span class="menu__dot"></span
+                ><span class="menu__dot"></span>
+              </div>
+            </div>
+            <div class="reports__report">
+              <div class="reports__numbers">
+                <h4 class="reports__number">100</h4>
+                <h4 class="reports__number">80</h4>
+                <h4 class="reports__number">60</h4>
+                <h4 class="reports__number">40</h4>
+                <h4 class="reports__number">20</h4>
+                <h4 class="reports__number">0</h4>
+              </div>
+              <img
+                src="./images/Line.svg"
+                alt="report image"
+                class="reports__img"
+              />
+            </div>
+            <div class="reports__times">
+              <h4 class="reports__time">10am</h4>
+              <h4 class="reports__time">11am</h4>
+              <h4 class="reports__time">12am</h4>
+              <h4 class="reports__time">01am</h4>
+              <h4 class="reports__time">02am</h4>
+              <h4 class="reports__time">03am</h4>
+              <h4 class="reports__time">04am</h4>
+              <h4 class="reports__time">05am</h4>
+              <h4 class="reports__time">06am</h4>
+              <h4 class="reports__time">07am</h4>
+            </div>
+          </div>
+          <div class="analytics">
+            <div class="reports__header analytics__header">
+              <h3 class="reports__title">Analytics</h3>
+              <div class="reports__menu">
+                <span class="menu__dot"></span><span class="menu__dot"></span
+                ><span class="menu__dot"></span>
+              </div>
+            </div>
+            <div class="analytics__report">
+              <img
+                src="./images/Donought chart.svg"
+                alt="analytics image"
+                class="analytics__img"
+              />
+
+              <div class="analytics__data">
+                <h3 class="analytics__number">80%</h3>
+                <h4 class="analytics__description">Transactions</h4>
+              </div>
+            </div>
+
+            <div class="analytics__indicator">
+              <div class="indicator">
+                <div class="indicator__color indicator__color1"></div>
+                <h3 class="indicator__title">Sale</h3>
+              </div>
+              <div class="indicator">
+                <div class="indicator__color indicator__color2"></div>
+                <h3 class="indicator__title">Distribute</h3>
+              </div>
+              <div class="indicator">
+                <div class="indicator__color indicator__color3"></div>
+                <h3 class="indicator__title">Return</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__orders">
+          <div class="recent__orders">
+            <div class="reports__header r-orders__header">
+              <h3 class="reports__title">Recent Orders</h3>
+              <div class="reports__menu">
+                <span class="menu__dot"></span><span class="menu__dot"></span
+                ><span class="menu__dot"></span>
+              </div>
+            </div>
+            <div class="recent__orders__content">
+              <div class="orders">
+                <div class="row header">
+                  <div class="arrow-down cell__head column1">
+                    <h3 class="t-header table__text">Tracking no</h3>
+                    <img
+                      src="./images/Arrow - Down 2.svg"
+                      alt="arrow"
+                      class="arrow"
+                    />
+                  </div>
+                  <div class="arrow-down cell__head column2">
+                    <h3 class="t-header table__text">Product Name</h3>
+                    <img
+                      src="./images/Arrow - Down 2.svg"
+                      alt="arrow"
+                      class="arrow"
+                    />
+                  </div>
+                  <div class="arrow-down cell__head column3">
+                    <h3 class="t-header table__text">Price</h3>
+                    <img
+                      src="./images/Arrow - Down 2.svg"
+                      alt="arrow"
+                      class="arrow"
+                    />
+                  </div>
+                  <div class="arrow-down cell__head column4">
+                    <h3 class="t-header table__text">Total Order</h3>
+                    <img
+                      src="./images/Arrow - Down 2.svg"
+                      alt="arrow"
+                      class="arrow"
+                    />
+                  </div>
+                  <div class="cell__head column5 table__text">Total Amount</div>
+                </div>
+
+                <div class="row odd__row first__row">
+                  <div class="cell column1 table__text">#876364</div>
+
+                  <div class="cell column2">
+                    <div class="product__img__name">
+                      <img
+                        src="./images/camera lens.svg"
+                        class="product__img"
+                      />
+                      <h3 class="product__name table__text">Camera Lens</h3>
+                    </div>
+                  </div>
+
+                  <div class="cell column3 table__text">$178</div>
+
+                  <div class="cell column4">
+                    <div class="total__order">
+                      <span class="total__order__num">325</span>
+                    </div>
+                  </div>
+
+                  <div class="cell column5 table__text">$1,46,660</div>
+                </div>
+
+                <div class="row even__row">
+                  <div class="cell column1 table__text">#876368</div>
+
+                  <div class="cell column2">
+                    <div class="product__img__name">
+                      <img
+                        src="./images/black sleep dress.svg"
+                        class="product__img"
+                      />
+                      <h3 class="product__name table__text">
+                        Black Sleep Dress
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="cell column3 table__text">$14</div>
+
+                  <div class="cell column4">
+                    <div class="total__order">
+                      <span class="total__order__num">53</span>
+                    </div>
+                  </div>
+
+                  <div class="cell column5 table__text">$46,660</div>
+                </div>
+
+                <div class="row odd__row row3">
+                  <div class="cell column1 table__text">#876412</div>
+
+                  <div class="cell column2">
+                    <div class="product__img__name">
+                      <img src="./images/argan oil.svg" class="product__img" />
+                      <h3 class="product__name table__text">Argan Oil</h3>
+                    </div>
+                  </div>
+
+                  <div class="cell column3 table__text">$21</div>
+
+                  <div class="cell column4">
+                    <div class="total__order">
+                      <span class="total__order__num">78</span>
+                    </div>
+                  </div>
+
+                  <div class="cell column5 table__text">$3,46,676</div>
+                </div>
+
+                <div class="row even__row">
+                  <div class="cell column1 table__text">#876621</div>
+
+                  <div class="cell column2">
+                    <div class="product__img__name">
+                      <img src="./images/parfum.svg" class="product__img" />
+                      <h3 class="product__name table__text">EAU DE Parfum</h3>
+                    </div>
+                  </div>
+
+                  <div class="cell column3 table__text">$32</div>
+
+                  <div class="cell column4">
+                    <div class="total__order">
+                      <span class="total__order__num">98</span>
+                    </div>
+                  </div>
+
+                  <div class="cell column5 table__text">$3,46,981</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top__selling">
+            <div class="reports__header top__selling__header">
+              <h3 class="reports__title">Top Selling Products</h3>
+              <div class="reports__menu">
+                <span class="menu__dot"></span><span class="menu__dot"></span
+                ><span class="menu__dot"></span>
+              </div>
+            </div>
+
+            <div class="top__selling__products">
+              <div class="top__selling__product">
+                <img
+                  src="./images/Mask Group.svg"
+                  alt="product image"
+                  class="top__product__img"
+                />
+                <div class="top__product__details">
+                  <h3 class="top__product__name">NIKE Shoes Black Pattern</h3>
+                  <div class="top__product__rating">
+                    <img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star.svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    />
+                  </div>
+                  <h3 class="top__product__price">$87</h3>
+                </div>
+              </div>
+              <div class="top__selling__product">
+                <img
+                  src="./images/Mask Group (1).svg"
+                  alt="product image"
+                  class="top__product__img"
+                />
+                <div class="top__product__details">
+                  <h3 class="top__product__name">iPhone 12</h3>
+                  <div class="top__product__rating">
+                    <img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star (1).svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    /><img
+                      src="./images/Star.svg"
+                      alt="star image"
+                      class="top__product__rate"
+                    />
+                  </div>
+                  <h3 class="top__product__price">$987</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
